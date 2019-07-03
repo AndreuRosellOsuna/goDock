@@ -1,0 +1,10 @@
+#/usr/bin/env bash
+
+if [ -z "$1" ]; then
+  echo "You must enter the name of the container"
+  exit 2
+fi
+
+param="$1"
+
+docker exec -it $1 bash
